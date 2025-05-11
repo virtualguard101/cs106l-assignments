@@ -19,7 +19,8 @@
 const std::string COURSES_OFFERED_PATH = "student_output/courses_offered.csv";
 const std::string COURSES_NOT_OFFERED_PATH = "student_output/courses_not_offered.csv";
 
-extern std::string header_row;
+// extern std::string header_row;
+static std::string header_row;
 
 /**
  * Represents a course a student can take in ExploreCourses.
@@ -172,5 +173,4 @@ int main() {
   return run_autograder();
 }
 
-// 正确全局变量定义位置
-std::string header_row;
+// std::string header_row;
