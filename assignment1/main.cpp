@@ -20,7 +20,6 @@ const std::string COURSES_OFFERED_PATH = "student_output/courses_offered.csv";
 const std::string COURSES_NOT_OFFERED_PATH = "student_output/courses_not_offered.csv";
 
 // extern std::string header_row;
-static std::string header_row;
 
 /**
  * Represents a course a student can take in ExploreCourses.
@@ -61,6 +60,8 @@ struct Course {
  * @param filename The name of the file to parse.
  * @param courses  A vector of courses to populate.
  */
+
+static std::string header_row;
 
 void parse_csv(std::string filename, std::vector<Course>& courses) {
   std::ifstream coursesFileStream(filename);
